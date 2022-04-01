@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">Etch-A-Sketch</div>
     <div class="content">
-        <div class="grid"></div>
-        <div class="options"></div>
+        <div class="grid">
+        </div>
+        <div class="options">
+            <div class="slidecontainer">
+                <div class="sizeValue">Grid Size: 10 x 10</div>
+                <input type="range" min="1" max="64" value="10" class="slider" id="slider">
+            </div>
+            <div class="eraserBtn">Eraser: Off</div>
+            <div class="clearBtn">Clear All</div>
+        </div>
     </div>
+    <div class="footer">Built with ❤ by ZaBarudo</div>
 </body>
 </html>
