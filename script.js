@@ -59,6 +59,7 @@ function createNew(gridSize){
         arrBox[i].classList.add('box');
         arrBox[i].setAttribute('style', `height: ${boxSize}px; width: ${boxSize}px; user-select:none;`);
         arrBox[i].addEventListener('mouseover', hoverColourAdd); 
+        arrBox[i].addEventListener('mousedown', hoverColourAdd); 
         arrBox[i].addEventListener('transitionend', hoverColourRemove);
         
         grid.appendChild(arrBox[i]);
